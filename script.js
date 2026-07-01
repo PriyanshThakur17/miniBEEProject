@@ -22,8 +22,7 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
         );
 
         if(validUser){
-            message.style.color = "green";
-            message.textContent = "Login Successful!";
+            window.location.href = "dashboard.html";
         }else{
             message.style.color = "red";
             message.textContent = "Invalid Username or Password";
